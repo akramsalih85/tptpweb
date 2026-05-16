@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+body{
+    height: 100vh;
+    background-color: darksalmon;
+}
+.form input{
+    padding: 10px;
+    background-color: darksalmon;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
