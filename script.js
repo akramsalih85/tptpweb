@@ -1,4 +1,4 @@
-console.log ("script loaded successfully");
+console.log("script loaded successfully");
 const nom = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -23,10 +23,17 @@ submit.addEventListener("click", function(event) {
         alert("Password must be at least 6 characters long.");
         return;
     }
+
     event.preventDefault();
+
+    const user = {
+        name: nom.value,
+        email: email.value,
+        password: password.value
+    };
+
     console.log("button clicked");
-    console.log(nom.value);
-    console.log(email.value);
-    console.log(password.value);
+    console.log("User object:", user);
     alert("Form submitted successfully!");
+
 });
