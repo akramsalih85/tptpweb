@@ -29,8 +29,3 @@ body{
     border: 1px solid black;
     cursor: pointer;
 }
-.form button:hover{
-    background-color: black;
-    color: darksalmon;
-    border: 1px solid white;
-}
