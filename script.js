@@ -4,11 +4,6 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const submit = document.getElementById("submit");
 
-console.log(nom);
-console.log(email);
-console.log(password);
-console.log(submit);
-
 submit.addEventListener("click", function(event) {
 
     if (nom.value === "" || email.value === "" || password.value === "") {
@@ -32,8 +27,11 @@ submit.addEventListener("click", function(event) {
         password: password.value
     };
 
-    console.log("button clicked");
-    console.log("User object:", user);
+    // ✅ Sauvegarder dans le Local Storage
+    localStorage.setItem("user", JSON.stringify(user));
+
+    console.log("User saved:", user);
+    console.log("Local Storage:", localStorage.getItem("user"));
     alert("Form submitted successfully!");
 
 });
